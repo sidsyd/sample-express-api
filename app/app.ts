@@ -14,7 +14,22 @@ app.use(bodyParser.json());
 const port = process.env.PORT || 4000; // port番号を指定
 
 app.get('/news', (req, res) => {
-    res.status(200).send({ message: 'hello, world' });
+    res.status(200).send({
+        message: [
+            {
+                date: "20XX.XX.XX",
+                title: "ニュース1がありました"
+            },
+            {
+                date: "20XX.XX.XX",
+                title: "ニュース2がありました"
+            },
+            {
+                date: "20XX.XX.XX",
+                title: "ニュース3がありました"
+            }
+        ]
+    });
 });
 
 //サーバ起動
