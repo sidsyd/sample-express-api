@@ -1,7 +1,8 @@
 {
   "name": "sample-express-api",
   "scripts": {
-    "dev": "node app/app.js"
+    "dev": "node app/app.js",
+    "build": "npx tsc"
   },
   "version": "1.0.0",
   "main": "index.js",
